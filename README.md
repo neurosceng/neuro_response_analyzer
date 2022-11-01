@@ -7,6 +7,8 @@ import neuro_response_analyzer as NRA
 
 とする。
 
+実験データは共用データベースに
+
 順次追記していく予定
 
 ##  計測環境
