@@ -27,23 +27,23 @@ windows11
 _plot_は描画をするだけで変数は返ってこない。主に確認用   
 one_waveは１試行の波形関連   
 multi_waveは加重平均したもの   
-#### 読み込み確認   
+#### 読み込み確認:   
 test   
 
-####　共通の数値処理   
+####　共通の数値処理:    
 td_array:2次配列の変換   
 sec_to_num:秒から要素   
 num_to_sec:要素から秒   
 str_fp:FP1ではなくFP01
 
-#### 純音用   
+#### 純音用:   
 csv_event_tone   
 one_wave_tone   
 one_wave_plot_tone   
 multi_wave_tone   
 multi_wave_plot_tone   
 
-#### 求愛音用   
+#### 求愛音用:   
 csv_event_courtship   
 one_wave_courtship   
 one_wave_plot_courtship   
