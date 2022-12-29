@@ -19,17 +19,25 @@ windows11
 
 
 ##  各関数解説   
-### 読み込み確認   
+
+純音は末尾に_tone   
+求愛音は末尾に_courtship   
+純音と求愛音でcsvの書式が違うため、少し違う   
+
+_plot_は描画をするだけで変数は返ってこない。主に確認用   
+one_waveは１試行の波形関連   
+multi_waveは加重平均したもの   
+#### 読み込み確認   
 test   
 
-### 純音用   
+#### 純音用   
 csv_event_tone   
 one_wave_tone   
 one_wave_plot_tone   
 multi_wave_tone   
 multi_wave_plot_tone   
 
-### 求愛音用   
+#### 求愛音用   
 csv_event_courtship   
 one_wave_courtship   
 one_wave_plot_courtship   
