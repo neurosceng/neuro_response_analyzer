@@ -18,7 +18,24 @@ import neuro_response_analyzer as NRA
 windows11
 
 
-##  各関数解説
+##  各関数解説   
+### 読み込み確認   
+test
+
+### 純音用   
+csv_event_tone
+one_wave_tone
+one_wave_plot_tone
+multi_wave_tone
+multi_wave_plot_tone
+
+### 求愛音用   
+csv_event_courtship
+one_wave_courtship
+one_wave_plot_courtship
+multi_wave_courtship
+multi_wave_plot_courtship
+
 
 
 ##  更新情報   
