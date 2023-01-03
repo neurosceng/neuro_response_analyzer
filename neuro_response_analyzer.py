@@ -117,8 +117,22 @@ def multi_wave_plot_tone(Data,Event_stamp_raw,pre,post,ch,db,frequency,trial_num
         plt.axvline(x=0, color='r')
         plt.plot(sec_axis,weight_average)
         
+def pre_weighted_average_tone(Data,Event_stamp_raw,pre,post,ch,db,frequency,trial_num,pre_num,csv_path):
+    #指定した数、その試行と試行前の波形を加重平均して返す。返しは二重配列になる。
+    #pre_num:加重平均の数、全部の波形の数が10としてpre_numが3の時、返す配列は7個
+    weighted_average_list = []
+    one_wave_np,sec_axis = one_wave_tone(Data,Event_stamp_raw,pre,post,ch,db,frequency,trial_num,csv_path)
+    for i in range(len(one_wave_np)):
+        if(i < pre_num):pass#3試行平均するとき全体の1試行目だと前に3個無いのでpass
+        else:
+            for j in range(pre_num):
+                if(j == 0):weight_average = one_wave_np[i]
+                else:weight_average = weight_average + one_wave_np[i-j]
+        
+            weight_average_one = weight_average /  int(trial_num)
+            weighted_average_list.append(weight_average_one)
+    return weighted_average_list,sec_axis
 
-    
 ######################################################################################################################    
 #ここから求愛音
 #求愛音の冠詞はcourtshipと置く
@@ -200,3 +214,19 @@ def multi_wave_plot_courtship(Data,Event_stamp_raw,pre,post,ch,sound_name,trial_
     weight_average = weight_average /  int(trial_num)
     plt.axvline(x=0, color='r')
     plt.plot(sec_axis,weight_average)
+    
+def pre_weighted_average_courtship(Data,Event_stamp_raw,pre,post,ch,sound_name,trial_num,pre_num,csv_path):
+    #指定した数、その試行と試行前の波形を加重平均して返す。返しは二重配列になる。
+    #pre_num:加重平均の数、全部の波形の数が10としてpre_numが3の時、返す配列は7個
+    weighted_average_list = []
+    one_wave_np,sec_axis = one_wave_courtship(Data,Event_stamp_raw,pre,post,sound_name,ch,trial_num,csv_path)
+    for i in range(len(one_wave_np)):
+        if(i < pre_num):pass#3試行平均するとき全体の1試行目だと前に3個無いのでpass
+        else:
+            for j in range(pre_num):
+                if(j == 0):weight_average = one_wave_np[i]
+                else:weight_average = weight_average + one_wave_np[i-j]
+        
+            weight_average_one = weight_average /  int(trial_num)
+            weighted_average_list.append(weight_average_one)
+    return weighted_average_list,sec_axis
