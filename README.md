@@ -29,8 +29,8 @@ windows11
 
 plot_は描画をするだけで変数は返ってこない。主に確認用   
 one_waveは１試行の波形関連   
-multi_waveはすべての波形を加重平均したもの
-pre_weighted_averageは指定した数、前の波を遡って加重平均する
+multi_waveはすべての波形を加重平均したもの   
+pre_weighted_averageは指定した数、前の波を遡って加重平均する   
 
 #### 読み込み確認:   
 test:Hello Module!と返る   
