@@ -27,9 +27,11 @@ windows11
 求愛音は末尾に_courtship   
 純音と求愛音でcsvの書式が違うため、少し違う   
 
-_plot_は描画をするだけで変数は返ってこない。主に確認用   
+plot_は描画をするだけで変数は返ってこない。主に確認用   
 one_waveは１試行の波形関連   
-multi_waveは加重平均したもの   
+multi_waveはすべての波形を加重平均したもの
+pre_weighted_averageは指定した数、前の波を遡って加重平均する
+
 #### 読み込み確認:   
 test:Hello Module!と返る   
 
@@ -45,6 +47,7 @@ one_wave_tone
 one_wave_plot_tone   
 multi_wave_tone   
 multi_wave_plot_tone   
+pre_weighted_average_tone
 
 #### 求愛音用:   
 csv_event_courtship   
@@ -52,7 +55,7 @@ one_wave_courtship
 one_wave_plot_courtship   
 multi_wave_courtship   
 multi_wave_plot_courtship   
-
+pre_weighted_average_courtship
 
 
 ##  更新情報   
@@ -60,3 +63,7 @@ multi_wave_plot_courtship
 version2　アップロード
 純音と求愛音に対応
 v1の波形指定が出来ないことのバグの修正
+
+2022/1/03
+version3 アップロード
+加重平均の関数を追加
