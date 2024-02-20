@@ -10,7 +10,9 @@ pip install git+https://github.com/neurosceng/neuro_response_analyzer.git
 
 import neuro_response_analyzer as NRA
 
-として使うようにする。
+として使うようにする。   
+
+最終バージョンはv7
 
 ~~実験データは共用データベース(Bmistation2)に順次追記していく予定~~    
 →Bmistation2 share/ozeki/experiment_data  -->純音関係のデータ   
