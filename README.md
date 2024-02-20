@@ -11,6 +11,10 @@ pip install git+https://github.com/neurosceng/neuro_response_analyzer.git
 import neuro_response_analyzer as NRA
 
 として使うようにする。   
+installしたらpythonで  
+NRA.test()  
+として  
+Hello World!が出たら無事インストール出来ている。  
 
 最終バージョンはv7
 
