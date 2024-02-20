@@ -14,7 +14,7 @@ import neuro_response_analyzer as NRA
 installしたらpythonで  
 NRA.test()  
 として  
-Hello World!が出たら無事インストール出来ている。  
+Hello Module!!が出たら無事インストール出来ている。  
 
 最終バージョンはv7
 
