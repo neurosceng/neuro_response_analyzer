@@ -13,6 +13,9 @@ import neuro_response_analyzer as NRA
 として使うようにする。
 
 ~~実験データは共用データベース(Bmistation2)に順次追記していく予定~~  
+→Bmistation2 share/ozeki/experiment_data  --純音関係のデータ
+→Bmistation2 share/ozeki/R5実験データ      --求愛音関係のデータ
+
 
 ~~最終的にはpipでやりたいが、最初は更新多めのため、同ディレクトリ下での使用をすることを想定。~~  
 
